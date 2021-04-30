@@ -1,6 +1,7 @@
 cr\ac\una\tarea\util\Mensaje.class
 cr\ac\una\tarea\util\FlowController.class
 cr\ac\una\tarea\util\Respuesta.class
+cr\ac\una\tarea\Controller\EncuentrosController.class
 cr\ac\una\tarea\Controller\EstadisticasController.class
 cr\ac\una\tarea\Controller\RegistroController.class
 cr\ac\una\tarea\util\AppContext.class
