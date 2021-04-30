@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="cr.ac.una.tarea.Controller.EncuentrosController">
+   <children>
+      <Pane fx:id="Cancha1" layoutX="204.0" prefHeight="111.0" prefWidth="175.0" />
+      <Pane fx:id="Cancha12" layoutX="204.0" layoutY="354.0" prefHeight="111.0" prefWidth="175.0" />
+      <ImageView fx:id="imgbalon" fitHeight="70.0" fitWidth="102.0" layoutX="249.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

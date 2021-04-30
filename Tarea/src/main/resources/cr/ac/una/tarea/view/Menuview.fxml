@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tarea.Controller.MenuviewController">
+   <children>
+      <JFXButton fx:id="btnregistro" layoutX="253.0" layoutY="54.0" onAction="#OnActionRegistro" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: white;" text="Registro" />
+      <JFXButton fx:id="btntorneo" layoutX="253.0" layoutY="108.0" onAction="#OnActionTorneo" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: white;" text="Torneo" />
+      <JFXButton fx:id="btnacercade" layoutX="252.0" layoutY="221.0" onAction="#OnActionAcercaDe" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: white;" text="Acerca de" />
+      <JFXButton fx:id="btnsalir" layoutX="253.0" layoutY="280.0" onAction="#OnActionSalir" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: white;" text="Salir" />
+      <JFXButton fx:id="btnestadisticas" layoutX="252.0" layoutY="161.0" onAction="#OnActionEstadisticas" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: white;" text="Estadiasticas" />
+   </children>
+</AnchorPane>
