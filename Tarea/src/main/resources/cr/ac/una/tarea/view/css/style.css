@@ -8,3 +8,23 @@
     -fx-base-color-id:#900C3F;
     
 }
+.MainRoot{
+    -fx-background-image:url("../recursos/14441386696050.jpg"); 
+    -fx-background-size:stretch; 
+}
+.jfx-button{ 
+    -fx-alignment: CENTER;
+    -fx-font-size: 14px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: #28F4FC;
+    -fx-pref-width: 200;
+    -fx-text-fill: black;
+}
+
+.cancha{
+    -fx-background-image:url("../recursos/cancha.png"); 
+    -fx-background-size:stretch; 
+}
+.ImageView{
+     -fx-background-image:url("../recursos/iconBall.png"); 
+}
