@@ -46,6 +46,10 @@ public class RegistroController extends Controller implements Initializable {
     private JFXTextField txtidequipo;
     @FXML
     private JFXTextField txtEquipo;
+    @FXML
+    private JFXButton btnAtras;
+    @FXML
+    private JFXButton btnAtras2;
 
     /**
      * Initializes the controller class.

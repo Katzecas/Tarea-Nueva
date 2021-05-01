@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
@@ -19,23 +18,44 @@
                <content>
                   <Pane prefHeight="396.0" prefWidth="600.0" stylesheets="@css/style.css">
                      <children>
-                        <ImageView fx:id="imgRegistro" fitHeight="150.0" fitWidth="200.0" layoutX="400.0" layoutY="14.0" onMouseClicked="#OnMouseClickedimgRegistro" pickOnBounds="true" preserveRatio="true" />
-                        <HBox alignment="CENTER" layoutY="270.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="107.0" prefWidth="600.0" spacing="15.0">
+                        <ImageView fx:id="imgRegistro" fitHeight="185.0" fitWidth="230.0" layoutX="333.0" layoutY="19.0" onMouseClicked="#OnMouseClickedimgRegistro" pickOnBounds="true" preserveRatio="true" />
+                        <VBox alignment="TOP_CENTER" prefHeight="187.0" prefWidth="229.0" spacing="30.0">
                            <children>
-                              <JFXButton fx:id="btncancelar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnCancelar" prefHeight="30.0" prefWidth="154.0" text="Cancelar" HBox.hgrow="ALWAYS" />
-                              <JFXButton fx:id="btneditar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnEditar" text="Editar" HBox.hgrow="ALWAYS" />
-                              <JFXButton fx:id="btnguardar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnGuardar" text="Guardar" HBox.hgrow="ALWAYS" />
-                           </children>
-                        </HBox>
-                        <VBox prefHeight="245.0" prefWidth="168.0" spacing="25.0">
-                           <children>
-                              <JFXTextField fx:id="txtidDeporte" promptText="ID" />
-                              <JFXTextField fx:id="txtDeporte" promptText="Nombre de Deporte" />
+                              <JFXTextField fx:id="txtidDeporte" prefHeight="25.0" prefWidth="195.0" promptText="ID">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtDeporte" prefHeight="25.0" prefWidth="195.0" promptText="Nombre de Deporte">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
                            </children>
                            <padding>
-                              <Insets left="10.0" right="10.0" />
+                              <Insets left="5.0" right="10.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                        <VBox alignment="BOTTOM_LEFT" layoutX="-1.0" layoutY="191.0" prefHeight="192.0" prefWidth="169.0" spacing="10.0">
+                           <children>
+                              <JFXButton fx:id="btneditar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnEditar" text="Editar" />
+                              <JFXButton fx:id="btnguardar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnGuardar" text="Guardar" />
+                              <JFXButton fx:id="btncancelar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnCancelar" prefHeight="30.0" prefWidth="154.0" text="Cancelar" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="10.0" right="20.0" />
                            </padding>
                         </VBox>
+                        <JFXButton fx:id="btnAtras" layoutX="363.0" layoutY="335.0" text="Atras" textAlignment="CENTER" />
                      </children>
                   </Pane>
                </content>
@@ -44,21 +64,34 @@
                <content>
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <ImageView fx:id="imgRegistroequipos" fitHeight="150.0" fitWidth="200.0" layoutX="365.0" layoutY="14.0" onMouseClicked="#OnMouseClickedimgRegistroequpos" pickOnBounds="true" preserveRatio="true" />
-                        <HBox alignment="CENTER" layoutY="267.0" prefHeight="111.0" prefWidth="600.0" spacing="15.0">
+                        <ImageView fx:id="imgRegistroequipos" fitHeight="185.0" fitWidth="230.0" layoutX="332.0" layoutY="14.0" onMouseClicked="#OnMouseClickedimgRegistroequpos" pickOnBounds="true" preserveRatio="true" />
+                        <JFXButton fx:id="btnAtras2" buttonType="RAISED" layoutX="362.0" layoutY="335.0" prefHeight="30.0" prefWidth="50.0" text="Atras" textAlignment="CENTER" />
+                        <VBox alignment="TOP_CENTER" prefHeight="183.0" prefWidth="230.0" spacing="30.0">
                            <children>
-                              <JFXButton fx:id="btncancelar2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnCancelar2" text="Cancelar" HBox.hgrow="ALWAYS" />
-                              <JFXButton fx:id="btneditar2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnEditar2" prefHeight="121.0" prefWidth="190.0" text="Editar" HBox.hgrow="ALWAYS" />
-                              <JFXButton fx:id="btnguardar2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnGuardar2" text="Guardar" HBox.hgrow="ALWAYS" />
-                           </children>
-                        </HBox>
-                        <VBox prefHeight="270.0" prefWidth="172.0" spacing="25.0">
-                           <children>
-                              <JFXTextField fx:id="txtidequipo" promptText="ID" />
-                              <JFXTextField fx:id="txtEquipo" promptText="Nombre de Equipo" />
+                              <JFXTextField fx:id="txtidequipo" promptText="ID">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin></JFXTextField>
+                              <JFXTextField fx:id="txtEquipo" promptText="Nombre de Equipo">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin></JFXTextField>
                            </children>
                            <padding>
                               <Insets left="10.0" right="10.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                        <VBox alignment="BOTTOM_LEFT" layoutX="1.0" layoutY="181.0" prefHeight="200.0" prefWidth="166.0" spacing="10.0">
+                           <children>
+                              <JFXButton fx:id="btneditar2" buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#OnActionBtnEditar2" prefHeight="33.0" prefWidth="126.0" text="Editar" />
+                              <JFXButton fx:id="btnguardar2" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#OnActionBtnGuardar2" text="Guardar" />
+                              <JFXButton fx:id="btncancelar2" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#OnActionBtnCancelar2" text="Cancelar" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="10.0" right="20.0" />
                            </padding>
                         </VBox>
                      </children>
