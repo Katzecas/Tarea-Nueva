@@ -15,8 +15,6 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
        FlowController.getInstance().InitializeFlow(stage, null);
-       //stage.getIcons().add(new Image("/cr/ac/una/tarea/resources/Icono.png"));
-       stage.setTitle("Brackets");
        FlowController.getInstance().goViewInWindow("Menuview");//  LoginView  habre inicialisando el fxml 
     }
 

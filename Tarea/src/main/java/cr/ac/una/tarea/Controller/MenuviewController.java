@@ -65,11 +65,12 @@ public class MenuviewController extends Controller implements Initializable {
 
     @FXML
     private void OnActionSalir(ActionEvent event) {
-          FlowController.getInstance().salir();
+            getStage().close();
     }
 
     @FXML
     private void OnActionEstadisticas(ActionEvent event) {
+        
           FlowController.getInstance().goViewInWindow("Estadisticas");
     }
     

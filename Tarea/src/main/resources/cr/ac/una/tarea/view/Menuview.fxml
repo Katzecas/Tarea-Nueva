@@ -15,7 +15,7 @@
                   <JFXButton fx:id="btnregistro" onAction="#OnActionRegistro" prefHeight="38.0" prefWidth="94.0" text="Registro" />
                   <JFXButton fx:id="btntorneo" onAction="#OnActionTorneo" prefHeight="38.0" prefWidth="94.0" text="Torneo" />
                   <JFXButton fx:id="btnacercade" onAction="#OnActionAcercaDe" prefHeight="38.0" prefWidth="94.0" text="Acerca de" />
-                  <JFXButton fx:id="btnestadisticas" onAction="#OnActionEstadisticas" prefHeight="39.0" prefWidth="541.0" text="Estadiasticas" />
+                  <JFXButton fx:id="btnestadisticas" onAction="#OnActionEstadisticas" prefHeight="39.0" prefWidth="541.0" text="Estadisticas" />
                   <JFXButton fx:id="btnsalir" onAction="#OnActionSalir" prefHeight="38.0" prefWidth="94.0" text="Salir" />
                </children>
                <opaqueInsets>
