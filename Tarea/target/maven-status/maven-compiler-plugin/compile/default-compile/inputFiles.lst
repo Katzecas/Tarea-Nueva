@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\David\Documents\GitHub\Tarea\Tarea Nueva\Tarea\src\main\java\cr\ac\una\tarea\Controller\Controller.java
 C:\Users\David\Documents\GitHub\Tarea\Tarea Nueva\Tarea\src\main\java\cr\ac\una\tarea\Controller\MenuviewController.java
 C:\Users\David\Documents\GitHub\Tarea\Tarea Nueva\Tarea\src\main\java\cr\ac\una\tarea\util\FlowController.java
@@ -14,3 +15,20 @@ C:\Users\David\Documents\GitHub\Tarea\Tarea Nueva\Tarea\src\main\java\cr\ac\una\
 C:\Users\David\Documents\GitHub\Tarea\Tarea Nueva\Tarea\src\main\java\cr\ac\una\tarea\util\BindingUtils.java
 C:\Users\David\Documents\GitHub\Tarea\Tarea Nueva\Tarea\src\main\java\cr\ac\una\tarea\util\Mensaje.java
 C:\Users\David\Documents\GitHub\Tarea\Tarea Nueva\Tarea\src\main\java\cr\ac\una\tarea\Controller\AcercadeController.java
+=======
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\Controller\RegistroController.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\util\AppContext.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\Controller\EncuentrosController.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\util\Respuesta.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\Controller\MenuviewController.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\module-info.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\util\FlowController.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\util\Mensaje.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\util\BindingUtils.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\util\Formato.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\Controller\TorneoController.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\Controller\Controller.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\Controller\EstadisticasController.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\App.java
+C:\Users\Administrador\Documents\GitHub\Tarea-Nueva\Tarea\src\main\java\cr\ac\una\tarea\Controller\AcercadeController.java
+>>>>>>> main

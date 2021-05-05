@@ -8,10 +8,19 @@
     -fx-base-color-id:#900C3F;
     
 }
+
 .MainRoot{
     -fx-background-image:url("../recursos/wallpaperflare.com_wallpaper.jpg"); 
     -fx-background-size:stretch; 
 }
+.RootBracket
+{
+    -fx-background-image:url("../recursos/MicrosoftEDU_CatAttack!.jpg"); 
+    -fx-background-size:stretch; 
+}
+
+
+
 .jfx-button{ 
     -fx-alignment: CENTER;
     -fx-font-size: 14px;

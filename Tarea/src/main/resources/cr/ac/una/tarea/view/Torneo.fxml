@@ -1,5 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polyline?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="cr.ac.una.tarea.Controller.TorneoController" />
+<AnchorPane id="AnchorPane" fx:id="RootBracket" prefHeight="600.0" prefWidth="800.0" styleClass="RootBracket" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tarea.Controller.TorneoController">
+   <children>
+      <Polyline fill="#1874dd" points="36.0, 208.0, 240.5, 123.2548828125, 37.5, 36.2548828125, 231.0, 123.2548828125" strokeType="INSIDE" />
+      <Polyline fill="#1874dd" layoutX="-73.0" layoutY="-24.0" points="108.0, 406.0, 313.5, 500.2548828125, 108.0, 581.0, 304.0, 500.2548828125" strokeType="INSIDE" />
+      <Polyline fill="#1874dd" points="240.5, 125.0, 400.0, 304.0, 240.5, 476.2548828125, 393.0, 304.0" strokeType="INSIDE" />
+      <Polyline fill="#1874dd" points="568.0, 121.0, 762.5, 215.0, 557.0, 121.0, 762.5, 43.0" strokeType="INSIDE" />
+      <Polyline fill="#1874dd" points="762.5, 386.2548828125, 554.0, 475.0, 759.0, 558.0, 567.0, 475.0" strokeType="INSIDE" />
+      <Polyline fill="#1874dd" points="559.0, 479.0, 398.0, 300.0, 559.0, 120.0, 407.0, 300.0" strokeType="INSIDE" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="160.0" spacing="100.0">
+               <children>
+                  <ImageView fx:id="imvCuartos1" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@recursos/14441386696050.jpg" />
+                     </image></ImageView>
+                  <ImageView fx:id="imvCuartos2" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@recursos/14441386696050.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imvCuartos3" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@recursos/14441386696050.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imvCuartos4" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@recursos/14441386696050.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="160.0" spacing="280.0">
+               <children>
+                  <ImageView fx:id="imvSemiF1" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@recursos/14441386696050.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imvSemiF2" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@recursos/14441386696050.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="160.0">
+               <children>
+                  <ImageView fx:id="imvFinales" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@recursos/14441386696050.jpg" />
+                     </image>
+                  </ImageView>
+               </children></VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="160.0" spacing="280.0">
+               <children>
+                  <ImageView fx:id="imvSemiF3" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@recursos/14441386696050.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imvSemiF4" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@recursos/14441386696050.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" prefHeight="600.0" prefWidth="160.0" spacing="100.0">
+               <children>
+                  <ImageView fx:id="imvCuartos5" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@recursos/14441386696050.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imvCuartos6" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@recursos/14441386696050.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imvCuartos7" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@recursos/14441386696050.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imvCuartos8" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@recursos/14441386696050.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
