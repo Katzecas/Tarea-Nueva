@@ -7,6 +7,7 @@ package cr.ac.una.tarea.Controller;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
+import cr.ac.una.tarea.util.Camara;
 import cr.ac.una.tarea.util.FlowController;
 import java.io.File;
 import java.net.URL;
@@ -55,36 +56,21 @@ public class RegistroController extends Controller implements Initializable {
     @FXML
     private JFXButton btnAtras2;
     @FXML
-    private JFXButton btnBucarImg;
+    private JFXButton btnBuscarImg;
+    @FXML
+    private JFXButton btnTomarfoto;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        btnBucarImg.setOnAction(event -> {
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Buscar Imagen");
-
-        // Agregar filtros para facilitar la busqueda
-        fileChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("All Images", "*.*"),
-                new FileChooser.ExtensionFilter("JPG", "*.jpg"),
-                new FileChooser.ExtensionFilter("PNG", "*.png")
-        );
-
-        // Obtener la imagen seleccionada
-        File imgFile = fileChooser.showOpenDialog(stage);
-
-        // Mostar la imagen
-        if (imgFile != null) {
-            Image image = new Image("file:" + imgFile.getAbsolutePath());
-            imgRegistro.setImage(image);
-        }
-    });
-      
-    }    
-
+        
+        
+        
+        
+    }   
+    
     @Override
     public void initialize() {
        txtEquipo.clear();
@@ -136,5 +122,41 @@ public class RegistroController extends Controller implements Initializable {
     private void OnActionbtnAtras2(ActionEvent event) {
          getStage().close();
     }
+
+    @FXML
+    private void OnActionbtnBuscarImg(ActionEvent event) {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Buscar Imagen");
+
+        // Agregar filtros para facilitar la busqueda
+        fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("All Images", "*.*"),
+                new FileChooser.ExtensionFilter("JPG", "*.jpg"),
+                new FileChooser.ExtensionFilter("PNG", "*.png")
+        );
+
+        // Obtener la imagen seleccionada
+        File imgFile = fileChooser.showOpenDialog(stage);
+
+        // Mostar la imagen
+        if (imgFile != null) {
+            Image image = new Image("file:" + imgFile.getAbsolutePath());
+            imgRegistro.setImage(image);
+        }
+    } 
+
+    @FXML
+    private void OnActionbtnTomarfoto(ActionEvent event) {
+        Camara cam=new Camara();
+        cam.iniciarCamara();
+        cam.tomarFotografia();
+        cam.cerrarCamara();
+        
+        Image img = new Image("file:profile.png");
+        imgRegistroequipos.setImage(img);
+    }
+        
+    
+
     
 }

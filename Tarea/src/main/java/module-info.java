@@ -5,16 +5,18 @@ module cr.ac.una.tarea {
     opens cr.ac.una.tarea.Controller;
     exports cr.ac.una.tarea.Controller;
     exports cr.ac.una.tarea.util;
-    
+ 
     
     opens cr.ac.una.tarea to javafx.fxml;
     exports cr.ac.una.tarea;
     requires com.jfoenix;
+    requires java.desktop;
     requires java.logging;
     requires javafx.fxmlEmpty;
     requires javafx.baseEmpty;
     requires javafx.base;
     requires javafx.graphicsEmpty;
     requires javafx.graphics;
+    requires webcam.capture;
     
 }

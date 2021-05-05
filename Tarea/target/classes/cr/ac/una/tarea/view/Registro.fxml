@@ -55,8 +55,8 @@
                               <Insets bottom="20.0" left="10.0" right="20.0" />
                            </padding>
                         </VBox>
-                        <JFXButton fx:id="btnAtras" layoutX="363.0" layoutY="335.0" onAction="#OnActionbtnAtras" text="Atras" textAlignment="CENTER" />
-                        <JFXButton fx:id="btnBucarImg" layoutX="363.0" layoutY="160.0" text="Buscar imagen" />
+                        <JFXButton fx:id="btnAtras" layoutX="367.0" layoutY="334.0" onAction="#OnActionbtnAtras" text="Atras" textAlignment="CENTER" />
+                        <JFXButton fx:id="btnBuscarImg" layoutX="363.0" layoutY="176.0" onAction="#OnActionbtnBuscarImg" prefHeight="30.0" prefWidth="169.0" text="Buscar imagen" />
                      </children>
                   </Pane>
                </content>
@@ -65,8 +65,8 @@
                <content>
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <ImageView fx:id="imgRegistroequipos" fitHeight="185.0" fitWidth="230.0" layoutX="332.0" layoutY="14.0" onMouseClicked="#OnMouseClickedimgRegistroequpos" pickOnBounds="true" preserveRatio="true" />
-                        <JFXButton fx:id="btnAtras2" layoutX="362.0" layoutY="335.0" onAction="#OnActionbtnAtras2" prefHeight="30.0" prefWidth="50.0" text="Atras" textAlignment="CENTER" />
+                        <ImageView fx:id="imgRegistroequipos" fitHeight="140.0" fitWidth="199.0" layoutX="363.0" layoutY="14.0" onMouseClicked="#OnMouseClickedimgRegistroequpos" pickOnBounds="true" preserveRatio="true" />
+                        <JFXButton fx:id="btnAtras2" layoutX="362.0" layoutY="334.0" onAction="#OnActionbtnAtras2" prefHeight="30.0" prefWidth="50.0" text="Atras" textAlignment="CENTER" />
                         <VBox alignment="TOP_CENTER" prefHeight="183.0" prefWidth="230.0" spacing="30.0">
                            <children>
                               <JFXTextField fx:id="txtidequipo" promptText="ID">
@@ -95,6 +95,7 @@
                               <Insets bottom="20.0" left="10.0" right="20.0" />
                            </padding>
                         </VBox>
+                        <JFXButton fx:id="btnTomarfoto" layoutX="362.0" layoutY="174.0" onAction="#OnActionbtnTomarfoto" text="Tomar una Fotografia" />
                      </children>
                   </Pane>
                </content>
