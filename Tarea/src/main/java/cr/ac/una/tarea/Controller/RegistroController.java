@@ -15,9 +15,11 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TabPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 
 /**
@@ -59,12 +61,17 @@ public class RegistroController extends Controller implements Initializable {
     private JFXButton btnBuscarImg;
     @FXML
     private JFXButton btnTomarfoto;
+    @FXML
+    private AnchorPane Root;
+    @FXML
+    private TabPane tabPane;
 
     /**
      * Initializes the controller class.
      */
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
+    public void initialize(URL url, ResourceBundle rb) 
+    {
         
         
         
@@ -124,7 +131,8 @@ public class RegistroController extends Controller implements Initializable {
     }
 
     @FXML
-    private void OnActionbtnBuscarImg(ActionEvent event) {
+    private void OnActionbtnBuscarImg(ActionEvent event)
+    {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Buscar Imagen");
 
