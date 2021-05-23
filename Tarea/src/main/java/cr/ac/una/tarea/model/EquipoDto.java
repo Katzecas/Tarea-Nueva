@@ -43,6 +43,23 @@ public EquipoDto()
     
 }
 
+public EquipoDto(SimpleStringProperty rank, SimpleStringProperty puesto, SimpleStringProperty wins, 
+                 SimpleStringProperty loses, SimpleStringProperty puntos,SimpleStringProperty anotRea,
+                 SimpleStringProperty anotRec, SimpleStringProperty id, SimpleStringProperty nombre)
+{
+    super(id, nombre);
+    
+    this.rank = rank;
+    this.puesto = puesto; 
+    this.wins= wins;
+    this.loses = loses;
+    this.puntos = puntos;
+    this.anotRea= anotRea;
+    this.anotRec = anotRec;
+    
+    
+}
+
     public String getRank() {
         return rank.get();
     }
@@ -124,11 +141,3 @@ public EquipoDto()
     }
     
 }
-/*
-    rank
-    puesto
-    .wins
-   loses
-    puntos 
-    anotRea
-   anotRec*/

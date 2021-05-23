@@ -22,6 +22,12 @@ public abstract class TorneoDto
     this.nombre = new SimpleStringProperty();
 
 }
+ 
+ public TorneoDto(SimpleStringProperty id, SimpleStringProperty nombre)
+ {
+     this.id=id;
+     this.nombre=nombre;
+ }
 
     public Long getId()
     {
