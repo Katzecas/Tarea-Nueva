@@ -22,7 +22,7 @@ public class EquipoDto extends TorneoDto
     public SimpleStringProperty anotRea;        //goles anotados;
     public SimpleStringProperty anotRec;        //Goles recividos;
    // public SimpleStringProperty anotacionT1;    //anotaciones durante el partido equipo 1
-    //public SimpleStringProperty anotacionT2;    //anotaciones durante el partido equipo 2
+   //public SimpleStringProperty anotacionT2;    //anotaciones durante el partido equipo 2
 
     
     
@@ -64,7 +64,8 @@ public EquipoDto(SimpleStringProperty rank, SimpleStringProperty puesto, SimpleS
         return rank.get();
     }
 
-    public void setRank(String rank) {
+    public void setRank(SimpleStringProperty rank) 
+    {
         this.rank.setValue(rank.toString());
     }
 
