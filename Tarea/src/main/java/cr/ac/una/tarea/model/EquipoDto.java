@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package cr.ac.una.tarea.model;
-
 import javafx.beans.property.SimpleStringProperty;
 
 /**
@@ -30,6 +29,7 @@ public class EquipoDto extends TorneoDto
     
 public EquipoDto()
 {
+    
     this.rank = new SimpleStringProperty();
     this.puesto = new SimpleStringProperty();
     this.wins  =new SimpleStringProperty();
@@ -111,8 +111,24 @@ public EquipoDto()
     @Override
     public String toString()
     {
-      return "hola";
+        StringBuilder sb = new StringBuilder();
+        sb.append("ID equipo{id=").append(id.get());
+        sb.append(", Nombre Equipo=").append(nombre.get());
+        sb.append(", Partidos Ganados=").append(wins.get());
+        sb.append(", Partidos Perdidos=").append(loses.get());
+        sb.append(", Puntos =").append(puntos.get());
+        sb.append(", Anotaciones Realizados=").append(anotRea.get());
+        sb.append(", Anotaciones Recibidos=").append(anotRec.get());
+        sb.append('}');
+        return sb.toString();
     }
     
 }
-
+/*
+    rank
+    puesto
+    .wins
+   loses
+    puntos 
+    anotRea
+   anotRec*/

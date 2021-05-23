@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package cr.ac.una.tarea.model;
-
 import javafx.beans.property.SimpleStringProperty;
 
 /**
