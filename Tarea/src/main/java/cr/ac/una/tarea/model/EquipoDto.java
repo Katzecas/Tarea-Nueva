@@ -22,7 +22,7 @@ public class EquipoDto extends TorneoDto
     public SimpleStringProperty anotRea;        //goles anotados;
     public SimpleStringProperty anotRec;        //Goles recividos;
    // public SimpleStringProperty anotacionT1;    //anotaciones durante el partido equipo 1
-    //public SimpleStringProperty anotacionT2;    //anotaciones durante el partido equipo 2
+   //public SimpleStringProperty anotacionT2;    //anotaciones durante el partido equipo 2
 
     
     
@@ -43,11 +43,29 @@ public EquipoDto()
     
 }
 
+public EquipoDto(SimpleStringProperty rank, SimpleStringProperty puesto, SimpleStringProperty wins, 
+                 SimpleStringProperty loses, SimpleStringProperty puntos,SimpleStringProperty anotRea,
+                 SimpleStringProperty anotRec, SimpleStringProperty id, SimpleStringProperty nombre)
+{
+    super(id, nombre);
+    
+    this.rank = rank;
+    this.puesto = puesto; 
+    this.wins= wins;
+    this.loses = loses;
+    this.puntos = puntos;
+    this.anotRea= anotRea;
+    this.anotRec = anotRec;
+    
+    
+}
+
     public String getRank() {
         return rank.get();
     }
 
-    public void setRank(String rank) {
+    public void setRank(SimpleStringProperty rank) 
+    {
         this.rank.setValue(rank.toString());
     }
 
@@ -124,11 +142,3 @@ public EquipoDto()
     }
     
 }
-/*
-    rank
-    puesto
-    .wins
-   loses
-    puntos 
-    anotRea
-   anotRec*/
