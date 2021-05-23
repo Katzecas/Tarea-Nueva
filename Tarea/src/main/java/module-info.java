@@ -5,6 +5,8 @@ module cr.ac.una.tarea {
     opens cr.ac.una.tarea.Controller;
     exports cr.ac.una.tarea.Controller;
     exports cr.ac.una.tarea.util;
+    requires org.eclipse.persistence.core;
+    opens cr.ac.una.tarea.model to org.eclipse.persistence.core;
  
     
     opens cr.ac.una.tarea to javafx.fxml;
