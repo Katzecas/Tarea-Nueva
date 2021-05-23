@@ -5,8 +5,11 @@
  */
 package cr.ac.una.tarea.Controller;
 
+import com.jfoenix.controls.JFXButton;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -15,6 +18,9 @@ import javafx.fxml.Initializable;
  * @author David
  */
 public class EstadisticasController extends Controller implements Initializable {
+
+    @FXML
+    private JFXButton btnAtras;
 
     /**
      * Initializes the controller class.
@@ -27,6 +33,12 @@ public class EstadisticasController extends Controller implements Initializable 
     @Override
     public void initialize() {
         
+    }
+
+    @FXML
+    private void OnActionbtnAtras(ActionEvent event)
+    {
+        getStage().close();
     }
     
 }

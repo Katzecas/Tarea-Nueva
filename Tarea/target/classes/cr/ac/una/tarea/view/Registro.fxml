@@ -3,99 +3,176 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="600.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tarea.Controller.RegistroController">
+<AnchorPane id="AnchorPane" fx:id="Root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tarea.Controller.RegistroController">
    <children>
-      <TabPane prefHeight="408.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane fx:id="tabPane" prefHeight="408.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
           <Tab text="Registro Deportes con balon">
                <content>
-                  <Pane prefHeight="396.0" prefWidth="600.0" stylesheets="@css/style.css">
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@css/style.css">
                      <children>
-                        <ImageView fx:id="imgRegistro" fitHeight="146.0" fitWidth="208.0" layoutX="359.0" layoutY="14.0" onMouseClicked="#OnMouseClickedimgRegistro" pickOnBounds="true" preserveRatio="true" />
-                        <VBox alignment="TOP_CENTER" prefHeight="187.0" prefWidth="229.0" spacing="30.0">
+                        <HBox prefHeight="380.0" prefWidth="600.0">
                            <children>
-                              <JFXTextField fx:id="txtidDeporte" prefHeight="25.0" prefWidth="195.0" promptText="ID">
+                              <VBox alignment="TOP_CENTER" spacing="30.0">
+                                 <children>
+                                    <JFXTextField fx:id="txtidDeporte" promptText="ID">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="txtDeporte" promptText="Nombre de Deporte">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <Separator prefHeight="24.0" prefWidth="284.0" />
+                                    <VBox alignment="BOTTOM_CENTER" prefHeight="205.0" prefWidth="220.0" spacing="10.0">
+                                       <children>
+                                          <JFXButton fx:id="btneditar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnEditar" text="Editar" />
+                                          <JFXButton fx:id="btnguardar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnGuardar" text="Guardar" />
+                                          <JFXButton fx:id="btncancelar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnCancelar" text="Cancelar" />
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" right="50.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                 </children>
                                  <padding>
-                                    <Insets left="10.0" />
+                                    <Insets left="5.0" right="10.0" />
                                  </padding>
-                                 <VBox.margin>
-                                    <Insets left="15.0" />
-                                 </VBox.margin>
-                              </JFXTextField>
-                              <JFXTextField fx:id="txtDeporte" prefHeight="25.0" prefWidth="195.0" promptText="Nombre de Deporte">
-                                 <padding>
-                                    <Insets left="10.0" />
-                                 </padding>
-                                 <VBox.margin>
-                                    <Insets left="15.0" />
-                                 </VBox.margin>
-                              </JFXTextField>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets top="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="TOP_RIGHT" prefHeight="380.0" prefWidth="300.0" spacing="100.0">
+                                 <children>
+                                    <VBox alignment="TOP_RIGHT" spacing="20.0">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" />
+                                          <ImageView fx:id="imgRegistro" fitHeight="140.0" fitWidth="210.0" onMouseClicked="#OnMouseClickedimgRegistro" pickOnBounds="true" preserveRatio="true">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" right="15.0" top="10.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <JFXButton fx:id="btnBuscarImg" onAction="#OnActionbtnBuscarImg" text="Buscar imagen">
+                                             <VBox.margin>
+                                                <Insets right="15.0" />
+                                             </VBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                    <JFXButton fx:id="btnAtras" onAction="#OnActionbtnAtras" prefHeight="30.0" prefWidth="220.0" text="Atras" textAlignment="CENTER">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" right="20.0" />
+                                       </VBox.margin>
+                                    </JFXButton>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
                            </children>
-                           <padding>
-                              <Insets left="5.0" right="10.0" />
-                           </padding>
-                           <opaqueInsets>
-                              <Insets />
-                           </opaqueInsets>
-                        </VBox>
-                        <VBox alignment="BOTTOM_LEFT" layoutX="-1.0" layoutY="191.0" prefHeight="192.0" prefWidth="169.0" spacing="10.0">
-                           <children>
-                              <JFXButton fx:id="btneditar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnEditar" text="Editar" />
-                              <JFXButton fx:id="btnguardar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnGuardar" text="Guardar" />
-                              <JFXButton fx:id="btncancelar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#OnActionBtnCancelar" prefHeight="30.0" prefWidth="154.0" text="Cancelar" />
-                           </children>
-                           <padding>
-                              <Insets bottom="20.0" left="10.0" right="20.0" />
-                           </padding>
-                        </VBox>
-                        <JFXButton fx:id="btnAtras" layoutX="367.0" layoutY="334.0" onAction="#OnActionbtnAtras" text="Atras" textAlignment="CENTER" />
-                        <JFXButton fx:id="btnBuscarImg" layoutX="363.0" layoutY="176.0" onAction="#OnActionbtnBuscarImg" prefHeight="30.0" prefWidth="169.0" text="Buscar imagen" />
+                        </HBox>
                      </children>
                   </Pane>
                </content>
             </Tab>
           <Tab text="Registro de Equipos">
                <content>
-                  <Pane prefHeight="200.0" prefWidth="200.0">
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
                      <children>
-                        <ImageView fx:id="imgRegistroequipos" fitHeight="140.0" fitWidth="199.0" layoutX="363.0" layoutY="14.0" onMouseClicked="#OnMouseClickedimgRegistroequpos" pickOnBounds="true" preserveRatio="true" />
-                        <JFXButton fx:id="btnAtras2" layoutX="362.0" layoutY="334.0" onAction="#OnActionbtnAtras2" prefHeight="30.0" prefWidth="50.0" text="Atras" textAlignment="CENTER" />
-                        <VBox alignment="TOP_CENTER" prefHeight="183.0" prefWidth="230.0" spacing="30.0">
+                        <HBox prefHeight="380.0" prefWidth="600.0">
                            <children>
-                              <JFXTextField fx:id="txtidequipo" promptText="ID">
-                                 <VBox.margin>
-                                    <Insets left="15.0" />
-                                 </VBox.margin></JFXTextField>
-                              <JFXTextField fx:id="txtEquipo" promptText="Nombre de Equipo">
-                                 <VBox.margin>
-                                    <Insets left="15.0" />
-                                 </VBox.margin></JFXTextField>
+                              <VBox alignment="TOP_CENTER" spacing="30.0">
+                                 <children>
+                                    <JFXTextField fx:id="txtidequipo" promptText="ID">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="30.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="txtEquipo" promptText="Nombre de Equipo">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="30.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </JFXTextField>
+                                    <Separator prefHeight="49.0" prefWidth="267.0" />
+                                    <VBox alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="180.0" prefWidth="220.0" spacing="10.0" stylesheets="@css/style.css">
+                                       <children>
+                                          <JFXButton fx:id="btneditar2" onAction="#OnActionBtnEditar2" text="Editar">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </JFXButton>
+                                          <JFXButton fx:id="btnguardar2" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#OnActionBtnGuardar2" text="Guardar" />
+                                          <JFXButton fx:id="btncancelar2" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#OnActionBtnCancelar2" prefHeight="20.0" text="Cancelar" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" right="50.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets top="20.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" right="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="TOP_RIGHT" prefHeight="380.0" prefWidth="300.0" spacing="100.0">
+                                 <children>
+                                    <VBox alignment="TOP_RIGHT" spacing="20.0">
+                                       <children>
+                                          <ImageView fx:id="imgRegistroequipos" fitHeight="140.0" fitWidth="210.0" onMouseClicked="#OnMouseClickedimgRegistroequpos" pickOnBounds="true" preserveRatio="true">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" right="15.0" top="10.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <JFXButton fx:id="btnTomarfoto" onAction="#OnActionbtnTomarfoto" text="Tomar una Fotografia">
+                                             <VBox.margin>
+                                                <Insets right="15.0" />
+                                             </VBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                    <JFXButton fx:id="btnAtras2" onAction="#OnActionbtnAtras2" text="Atras" textAlignment="CENTER">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" right="20.0" />
+                                       </VBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
                            </children>
-                           <padding>
-                              <Insets left="10.0" right="10.0" />
-                           </padding>
-                           <opaqueInsets>
-                              <Insets />
-                           </opaqueInsets>
-                        </VBox>
-                        <VBox alignment="BOTTOM_LEFT" layoutX="1.0" layoutY="181.0" prefHeight="200.0" prefWidth="166.0" spacing="10.0" stylesheets="@css/style.css">
-                           <children>
-                              <JFXButton fx:id="btneditar2" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#OnActionBtnEditar2" prefHeight="33.0" prefWidth="126.0" text="Editar" />
-                              <JFXButton fx:id="btnguardar2" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#OnActionBtnGuardar2" text="Guardar" />
-                              <JFXButton fx:id="btncancelar2" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#OnActionBtnCancelar2" text="Cancelar" />
-                           </children>
-                           <padding>
-                              <Insets bottom="20.0" left="10.0" right="20.0" />
-                           </padding>
-                        </VBox>
-                        <JFXButton fx:id="btnTomarfoto" layoutX="362.0" layoutY="174.0" onAction="#OnActionbtnTomarfoto" text="Tomar una Fotografia" />
+                        </HBox>
                      </children>
                   </Pane>
                </content>
