@@ -125,6 +125,7 @@
                                     <Separator prefHeight="49.0" prefWidth="267.0" />
                                     <VBox alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="180.0" prefWidth="220.0" spacing="10.0" stylesheets="@css/style.css">
                                        <children>
+                                          <JFXButton fx:id="RegAutomatico" buttonType="RAISED" onAction="#OnActionRegistroAutomatico" text="Registro Automatico" />
                                           <JFXButton fx:id="btneditar2" onAction="#OnActionBtnEditar2" text="Editar">
                                              <VBox.margin>
                                                 <Insets />

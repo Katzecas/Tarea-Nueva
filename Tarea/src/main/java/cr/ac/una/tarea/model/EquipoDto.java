@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package cr.ac.una.tarea.model;
+import java.util.ArrayList;
 import javafx.beans.property.SimpleStringProperty;
 
 /**
@@ -12,6 +13,8 @@ import javafx.beans.property.SimpleStringProperty;
  */
 public class EquipoDto extends TorneoDto 
 {
+    
+    ArrayList<EquipoDto> team = new ArrayList<>();
     //private boolean participacion=false;//para saber si el equipo participo
     
     public SimpleStringProperty rank;           //ranking global para los equipos
@@ -21,7 +24,8 @@ public class EquipoDto extends TorneoDto
     public SimpleStringProperty puntos;         //puntos obtenidos durante el torneo para el ranking
     public SimpleStringProperty anotRea;        //goles anotados;
     public SimpleStringProperty anotRec;        //Goles recividos;
-   // public SimpleStringProperty anotacionT1;    //anotaciones durante el partido equipo 1
+   
+    // public SimpleStringProperty anotacionT1;    //anotaciones durante el partido equipo 1
    //public SimpleStringProperty anotacionT2;    //anotaciones durante el partido equipo 2
 
     
@@ -38,7 +42,7 @@ public EquipoDto()
     this.anotRea= new SimpleStringProperty();
     this.anotRec =new SimpleStringProperty();
    // this.anotacionT1 =new SimpleStringProperty();
-    //this.anotacionT2 =new SimpleStringProperty();
+   //this.anotacionT2 =new SimpleStringProperty();
 
     
 }
@@ -140,5 +144,6 @@ public EquipoDto(SimpleStringProperty rank, SimpleStringProperty puesto, SimpleS
         sb.append('}');
         return sb.toString();
     }
-    
+
+
 }

@@ -65,6 +65,8 @@ public class RegistroController extends Controller implements Initializable {
     private AnchorPane Root;
     @FXML
     private TabPane tabPane;
+    @FXML
+    private JFXButton RegAutomatico;
 
     /**
      * Initializes the controller class.
@@ -162,6 +164,10 @@ public class RegistroController extends Controller implements Initializable {
         
         Image img = new Image("file:profile.png");
         imgRegistroequipos.setImage(img);
+    }
+
+    @FXML
+    private void OnActionRegistroAutomatico(ActionEvent event) {
     }
         
     

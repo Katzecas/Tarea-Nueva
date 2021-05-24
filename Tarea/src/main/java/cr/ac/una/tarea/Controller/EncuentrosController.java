@@ -26,9 +26,9 @@ public class EncuentrosController implements Initializable {
     @FXML
     private Pane Cancha12;
     @FXML
-    private ImageView invEquipo2;
-    @FXML
     private ImageView imgbalon;
+    @FXML
+    private ImageView imvEquipo2;
 
     /**
      * Initializes the controller class.

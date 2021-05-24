@@ -34,7 +34,7 @@
 }
 
 .cancha{
-    -fx-background-image:url("../recursos/cancha.png"); 
+    -fx-background-image:url("../recursos/cancha.jpg"); 
     -fx-background-size:stretch; 
 }
 .ImageView{

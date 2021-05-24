@@ -6,14 +6,14 @@
 
 <AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="600.0" styleClass="cancha" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tarea.Controller.EncuentrosController">
    <children>
-      <Pane fx:id="Cancha1" layoutX="212.0" prefHeight="111.0" prefWidth="175.0">
+      <Pane fx:id="Cancha1" layoutX="14.0" layoutY="172.0" prefHeight="119.0" prefWidth="87.0">
          <children>
-            <ImageView fx:id="imvEquipo1" fitHeight="111.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imvEquipo1" fitHeight="98.0" fitWidth="101.0" layoutX="-5.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
          </children></Pane>
-      <Pane fx:id="Cancha12" layoutX="212.0" layoutY="354.0" prefHeight="111.0" prefWidth="175.0">
+      <Pane fx:id="Cancha12" layoutX="499.0" layoutY="168.0" prefHeight="125.0" prefWidth="87.0">
          <children>
-            <ImageView fx:id="invEquipo2" fitHeight="111.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imvEquipo2" fitHeight="98.0" fitWidth="101.0" layoutX="-19.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
          </children></Pane>
-      <ImageView id="imgbalon" fx:id="imgbalon" fitHeight="70.0" fitWidth="102.0" layoutX="249.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true" styleClass="ImageView" />
+      <ImageView id="imgbalon" fx:id="imgbalon" fitHeight="86.0" fitWidth="87.0" layoutX="256.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true" styleClass="ImageView" AnchorPane.bottomAnchor="201.0" AnchorPane.leftAnchor="256.0" AnchorPane.rightAnchor="257.0" AnchorPane.topAnchor="179.0" />
    </children>
 </AnchorPane>

@@ -62,8 +62,7 @@ public abstract class TorneoDto
  
  @Override
  public abstract String toString();
- 
- 
+
  
     
 }
